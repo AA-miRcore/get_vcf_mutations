@@ -65,7 +65,8 @@ def setColumns(first_line):
 
     first_line = first_line.split();
     for col in first_line:
-        if len(col) > 2 and (((col[0] == '0' or col[0] == '1') and col[1] == '/') or (col[0] == '.' and col[1] == ':')):
+        if len(col) > 2 and (((col[0] == '0' or col[0] == '1') and col[1] == '/') or (col[0] == '.' and col[1] == ':')
+            or (col[0] == '.' and col[1] == '/')):
             if counter == 0:
                 globals()['COL1'] = col_counter;
             elif counter == 1:
