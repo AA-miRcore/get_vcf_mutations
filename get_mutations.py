@@ -128,9 +128,9 @@ def parseLine(line):
 
 vcf_file_name = args.input;
 
-if vcf_file_name[-4:] != ".vcf":
-    print("File is not a .vcf file");
-    sys.exit();
+#if vcf_file_name[-4:] != ".vcf":
+#    print("File is not a .vcf file");
+#    sys.exit();
 
 vcf_file = open(vcf_file_name);
 
