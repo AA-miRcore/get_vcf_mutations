@@ -78,6 +78,8 @@ def setColumns(first_line):
 def cleanCol(col):
     if col[0:2] == ".:":
         col = col[0:2];
+    elif col[1] == ":":
+        col = col[0];
     else:
         col = col[0:3];
     
